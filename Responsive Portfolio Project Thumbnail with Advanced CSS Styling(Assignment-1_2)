@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <main>
+        <section class="project">
+            <div class="project-thumbnail"></div>
+            <div class="project-details">
+                <h2>Project Title 1</h2>
+                <p>Description of the project goes here.</p>
+                <a href="#">View Project</a>
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="project-thumbnail"></div>
+            <div class="project-details">
+                <h2>Project Title 2</h2>
+                <p>Description of the project goes here.</p>
+                <a href="#">View Project</a>
+            </div>
+        </section>
+
+        <!-- More project sections can be added as needed -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project-thumbnail {
+    background-color: #f0f0f0;
+    height: 200px;
+}
+
+.project-details {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
