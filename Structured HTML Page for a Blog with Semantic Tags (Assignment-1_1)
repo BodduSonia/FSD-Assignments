@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, article, section, footer {
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        figcaption {
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+        <p>Where you can find interesting articles on various topics.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <article>
+            <h2>10 Tips for Successful Blogging</h2>
+            <p>Here are some tips to help you succeed in the world of blogging:</p>
+            <ol>
+                <li>Choose a niche you're passionate about.</li>
+                <li>Be consistent with your posting schedule.</li>
+                <li>Engage with your audience through comments and social media.</li>
+                <li>Use eye-catching visuals to accompany your posts.</li>
+                <li>Optimize your content for search engines.</li>
+                <li>Network with other bloggers in your niche.</li>
+                <li>Monetize your blog through ads, affiliate marketing, or selling products.</li>
+                <li>Stay authentic and true to your voice.</li>
+                <li>Track your analytics to understand what resonates with your audience.</li>
+                <li>Have fun and enjoy the process!</li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>The Benefits of Regular Exercise</h2>
+            <p>Regular exercise has numerous benefits for both the body and mind. Some of these benefits include:</p>
+            <ul>
+                <li>Improved cardiovascular health</li>
+                <li>Weight management</li>
+                <li>Stress relief</li>
+                <li>Better sleep</li>
+                <li>Increased energy levels</li>
+                <li>Enhanced mood</li>
+                <li>Improved cognitive function</li>
+                <li>Boosted immune system</li>
+                <li>Increased longevity</li>
+            </ul>
+            <figure>
+                <img src="exercise.jpg" alt="Person jogging">
+                <figcaption>Regular exercise has numerous benefits for both the body and mind.</figcaption>
+            </figure>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
