@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Flipper</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+    }
+
+    #container {
+        text-align: center;
+    }
+
+    #color-display {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #color-btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: #007bff;
+        border: none;
+        color: #fff;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+    #color-btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="color-display">Click the button to flip the color!</div>
+    <button id="color-btn">Flip Color</button>
+</div>
+
+<script>
+    const colorDisplay = document.getElementById('color-display');
+    const colorBtn = document.getElementById('color-btn');
+
+    const colors = [
+        '#FF5733', '#33FF57', '#5733FF', '#33A1FF', '#FF33F6', '#33FFB5', '#D633FF', '#FF33E3', '#9AFF33', '#333BFF'
+    ];
+
+    colorBtn.addEventListener('click', () => {
+        const randomIndex = Math.floor(Math.random() * colors.length);
+        const randomColor = colors[randomIndex];
+        document.body.style.backgroundColor = randomColor;
+        colorDisplay.textContent = `Color: ${randomColor}`;
+    });
+</script>
+</body>
+</html>
