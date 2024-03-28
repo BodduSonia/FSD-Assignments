@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Mark Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #dddddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0e753e;
+        }
+
+        tbody td {
+            vertical-align: middle;
+        }
+
+        /* Color coding for cells */
+        tbody td:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        tbody td:nth-child(even) {
+            background-color: #e5e5e5;
+        }
+
+        /* Color coding for specific cells */
+        td.David, td.Richard, td.Jhon, td.Tony, td.Scott {
+            background-color: lightgoldenrodyellow;
+        }
+
+        td.85, td.91, td.81, td.84, td.71 {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <td colspan="8" class="table-title">STUDENTS MARK LIST</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Maths</th>
+            <th>Science</th>
+            <th>English</th>
+            <th>Physics</th>
+            <th>General Knowledge</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>David</td>
+            <td class="85">85</td>
+            <td>87</td>
+            <td>88</td>
+            <td>92</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>Richard</td>
+            <td class="91">91</td>
+            <td>81</td>
+            <td>78</td>
+            <td>71</td>
+            <td>74</td>
+        </tr>
+        <tr>
+            <td>Jhon</td>
+            <td class="81">81</td>
+            <td>86</td>
+            <td>88</td>
+            <td>84</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>Tony</td>
+            <td class="84">84</td>
+            <td>86</td>
+            <td>87</td>
+            <td>82</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td>Scott</td>
+            <td class="71">71</td>
+            <td>79</td>
+            <td>82</td>
+            <td>88</td>
+            <td>89</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
